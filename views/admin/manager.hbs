@@ -1,0 +1,107 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="/stylesheets/reset.css" />
+        <link rel="stylesheet" href="/stylesheets/manager.css" />
+    </head>
+    <body>
+        <div class="decor">
+            <a href="/Admin/show" class="sign-in">Home</a>
+        </div>
+        <div class="container">
+            <div class="add">
+                <a href="/Phone/create" class="add__item">Add Phone</a>
+                <a href="/PC/create" class="add__item">Add Laptop</a>
+                <a href="/Admin/createAd" class="add__item">Add Account</a>
+            </div>
+            <h1 class="product-table">Product Table</h1>
+            <table class="table">
+                <thead>
+                    <tr class="tr">
+                        <th class="th">Name</th>
+                        <th class="th">Images</th>
+                        <th class="th">Origin</th>
+                        <th class="th">Price</th>
+                        <th class="th">Old Price</th>
+                        <th class="th">Description</th>
+                        <th class="th"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each PCs}}
+                        <tr class="tr">
+                            <td class="td">{{name}}</td>
+                            <td class="td"><img
+                                    src="{{image}}"
+                                    alt=""
+                                    class="image"
+                                /></td>
+                            <td class="td">{{origin}}</td>
+                            <td class="td">{{price}}</td>
+                            <td class="td">{{oldPrice}}</td>
+                            <td class="td">{{description}}</td>
+                            <td class="td">
+                                <a href="/PC/update/{{_id}}">Update</a>
+                                <a
+                                    href="/PC/delete/{{_id}}"
+                                    onclick="return confirm('Are you sure to delete this student ?');"
+                                >Delete</a>
+                            </td>
+                        </tr>
+                    {{/each}}
+                    {{#each Phones}}
+                        <tr class="tr">
+                            <td class="td">{{name}}</td>
+                            <td class="td"><img
+                                    src="{{image}}"
+                                    alt=""
+                                    class="image"
+                                /></td>
+                            <td class="td">{{origin}}</td>
+                            <td class="td">{{price}}</td>
+                            <td class="td">{{oldPrice}}</td>
+                            <td class="td">{{description}}</td>
+                            <td class="td">
+                                <a href="/Phone/update/{{_id}}">Update</a>
+                                <a
+                                    href="/Phone/delete/{{_id}}"
+                                    onclick="return confirm('Are you sure to delete this ?');"
+                                >Delete</a>
+                            </td>
+                        </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+            <h1 class="product-table">Account Table</h1>
+            <table class="table" style="margin-bottom: 100px;">
+                <thead>
+                    <tr class="tr">
+                        <th class="th">Email</th>
+                        <th class="th">Password</th>
+                        <th class="th">Role</th>
+                        <th class="th"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each Accs}}
+                        <tr class="tr">
+                            <td class="td">{{name}}</td>
+                            <td class="td">{{password}}</td>
+                            <td class="td">{{role}}</td>
+
+                            <td class="td">
+                                <a href="/Admin/update/{{_id}}">Update</a>
+                                <a
+                                    href="/Admin/delete/{{_id}}"
+                                    onclick="return confirm('Are you sure ?');"
+                                >Delete</a>
+                            </td>
+                        </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

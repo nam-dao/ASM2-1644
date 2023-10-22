@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="/stylesheets/index.css" />
+
+<main class="main">
+    <div class="container">
+        <div class="sales-area">
+            {{#each PCs}}
+                <div class="sales-area__item">
+                    <a href="/PC/{{_id}}">
+                        <img
+                            src="{{image}}"
+                            alt=""
+                            class="sales-area__item-img"
+                        />
+                    </a>
+                    <p class="sales-area__item-desc">{{name}}</p>
+                    <p class="sales-area__item-price color-text">{{price}}</p>
+                    <p class="sales-area__item-old-price">Old price:
+                        <span class="color-text">{{oldPrice}}</span></p>
+                </div>
+            {{/each}}
+        </div>
+    </div>
+</main>

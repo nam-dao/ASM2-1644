@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: sans-serif;
+    background: #f4f4f4;
+}
+
+/* Common */
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    margin-left: 163px;
+    margin-right: 163px;
+}
+
+/*heading*/
+.decor {
+    height: 25px;
+    background: #00483d;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.shop {
+    margin-left: 30px;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.form {
+    position: relative;
+    padding: 25px;
+}
+
+.create-container {
+    width: 800px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.create {
+    font-size: 2rem;
+    color: #000;
+}
+
+.form__label-name,
+.form__label-type,
+.form__label-price,
+.form__label-description {
+    display: block;
+    font-size: 1.5rem;
+    margin-top: 25px;
+}
+
+.form__label-price,
+.form__label-description,
+.form__label-type,
+.form__label-time {
+    margin-top: 25px;
+}
+
+input[type=text] {
+    margin-top: 2px;
+    width: 740px;
+    height: 40px;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type=text]:focus {
+    outline: 2px solid #00483d;
+    outline-offset: -2px;
+}
+
+.form__input-type {
+    margin-top: 2px;
+    width: 740px;
+    height: 40px;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.form__input-type:focus,
+.form__input-description:focus,
+.form__input-date:focus {
+    outline: 2px solid #00483d;
+    outline-offset: -2px;
+}
+
+.form__input-description {
+    resize: none;
+    margin-top: 2px;
+    width: 740px;
+    height: 120px;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+}
+
+.form__input-date {
+    width: 200px;
+    margin-top: 2px;
+    height: 40px;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+}
+
+
+.form-cta {
+    display: flex;
+    position: absolute;
+    right: 35px;
+    gap: 30px;
+    margin-top: 25px;
+}
+
+.form-cta__cancel {
+    font-size: 1.5rem;
+    color: #8993a4;
+    padding: 10px 20px;
+}
+
+.form-cta__cancel:hover {
+    color: #b4bdcd;
+    text-decoration: underline;
+}
+
+.form-cta__create {
+    font-size: 1.5rem;
+    color: #FFF;
+    background: #00483d;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+}
+
+.form-cta__create:hover {
+    opacity: 0.8;
+}

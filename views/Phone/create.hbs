@@ -1,0 +1,50 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="/stylesheets/reset.css" />
+        <link rel="stylesheet" href="/stylesheets/create.css" />
+    </head>
+    <body>
+        <div class="decor">
+            <a href="/Phone" class="shop">Shop
+            </a>
+        </div>
+        <div class="create-container">
+            <h1 class="create">
+                Create Phone
+            </h1>
+            <form action="/Phone/create" class="form" method="post">
+                <label for="" class="form__label-name">Name</label>
+                <input type="text" class="form__input-name" name="name" />
+                <label for="" class="form__label-type">Type of Product</label>
+                <label for="" class="form__label-type">Origin</label>
+                <input type="text" class="form__input-name" name="origin" />
+                <label for="" class="form__label-type">Price</label>
+                <input type="text" class="form__input-name" name="price" />
+                <label for="" class="form__label-type">Old Price</label>
+                <input type="text" class="form__input-name" name="oldPrice" />
+                <label for="" class="form__label-type">Link images</label>
+                <input type="text" class="form__input-name" name="image" />
+                <label
+                    for=""
+                    class="form__label-description"
+                >Description</label>
+                <textarea
+                    class="form__input-description"
+                    name="description"
+                    required
+                ></textarea>
+                <div class="form-cta">
+                    <a href="/Admin" class="form-cta__cancel">Cancel</a>
+                    <input
+                        type="submit"
+                        class="form-cta__create"
+                        value="Create"
+                    />
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

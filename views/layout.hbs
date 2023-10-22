@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>{{title}}</title>
+        <link rel="stylesheet" href="/stylesheets/reset.css" />
+        <link rel="stylesheet" href="/stylesheets/layout.css" />
+    </head>
+    <body>
+        <div class="decor">
+            {{! <a href="/Admin/signin" class="sign-in">Sign in</a> }}
+        </div>
+        <div class="container">
+            <heading class="heading">
+                <a href="/Admin/show" class="logo">Shop</a>
+                <form action="/PC/search" class="search" method="post">
+                    <input
+                        type="type"
+                        class="search__input"
+                        placeholder="Search..."
+                        name="name"
+                    />
+                    <input
+                        type="submit"
+                        class="search__submit"
+                        value="Search"
+                    />
+                </form>
+                <a href="/Admin/signin" class="admin">Admin</a>
+                {{! <a href="" class="cart">Cart</a> }}
+            </heading>
+        </div>
+        <div class="navbar">
+            <div class="container">
+                <div class="navbar-cover">
+                    <a href="/Phone" class="navbar__phone">Phone</a>
+                    <a href="/PC" class="navbar__PC">Laptop</a>
+                </div>
+            </div>
+        </div>
+        {{{body}}}
+    </body>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-cover">
+                <p class="footer-desc">Copyright &copy; 2023 Shopping Mall</p>
+            </div>
+        </div>
+    </footer>
+</html>

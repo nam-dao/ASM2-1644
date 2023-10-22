@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  background: #f4f4f4;
+}
+
+/* Common */
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin-left: 163px;
+  margin-right: 163px;
+}
+
+/*heading*/
+.decor {
+  height: 25px;
+  background: #00483d;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.sign-in {
+  margin-right: 30px;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.sign-in:hover {
+  text-decoration: underline;
+}
+
+.heading {
+  margin-top: 20px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2.5rem;
+  color: #00483d;
+}
+
+.navbar-cover {
+  margin-top: 20px;
+  height: 60px;
+  border-radius: 10px;
+  background: #00483d;
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.navbar__phone,
+.navbar__PC {
+  color: #FFF;
+  font-size: 2rem;
+}
+
+.navbar__phone {
+  margin-left: 20px;
+}
+
+.navbar__phone:hover,
+.navbar__PC:hover {
+  text-decoration: underline;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.search__input {
+  width: 666px;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 2px 2px #ccc;
+  margin-left: 240px;
+}
+
+.search__input:focus {
+  outline: 2px solid #00483d;
+  outline-offset: -1px;
+}
+
+.search__submit {
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: #00483d;
+  color: #fff;
+  margin-left: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.search__submit:hover {
+  opacity: 0.9;
+}
+
+.admin {
+  padding: 10px;
+  margin-left: 30px;
+  font-size: 1.5rem;
+  color: #00483d;
+  background: #fff;
+  border: 1px solid #00483d;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.admin:hover {
+  opacity: 0.9;
+}
+
+.cart {
+  padding: 10px;
+  margin-left: 30px;
+  font-size: 1.5rem;
+  color: #fff;
+  background: #00483d;
+  border: 1px solid #00483d;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.cart:hover {
+  opacity: 0.9;
+}
+
+.footer {
+  margin-top: 60px;
+}
+
+.footer-cover {
+  height: 50px;
+  border-radius: 10px;
+  background: #00483d;
+}
+
+.footer-desc {
+  padding-top: 16px;
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+}

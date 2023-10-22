@@ -1,0 +1,75 @@
+.main {
+    margin-top: 50px;
+    margin-bottom: 110px;
+}
+
+.heading {
+    font-size: 2rem;
+    color: #293735;
+    font-weight: 600;
+}
+
+.main-cover__img {
+    height: 390px;
+    width: 325px;
+    object-fit: cover;
+}
+
+.main-cover {
+    display: flex;
+    gap: 20px;
+}
+
+.main-cover-desc {
+    margin-left: 10px;
+}
+
+.text-color {
+    color: red;
+}
+
+.price {
+    margin-top: 40px;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.old-price {
+    margin-top: 10px;
+    font-size: 2rem;
+    font-weight: 600;
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+.main-cover__decor {
+    margin-top: 10px;
+    display: block;
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 10px 0 10px;
+    width: 500px;
+    border-radius: 10px;
+    background: #00483d;
+}
+
+.add-to-cart {
+    margin-top: 10px;
+    display: inline-block;
+    padding: 30px;
+    border: 1px solid #00483d;
+    color: #00483d;
+    background: #fff;
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+
+.add-to-cart:hover {
+    opacity: 0.8;
+}
+
+.extra-item {
+    font-size: 1.8rem;
+    line-height: 1.2;
+}

@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="/stylesheets/detail.css" />
+<main class="main">
+    <div class="container">
+        <h1 class="heading">
+            {{PC.name}}
+        </h1>
+        <div class="main-cover">
+            <img src="{{PC.image}}" alt="" class="main-cover__img" />
+            <div class="main-cover-desc">
+                <h2 class="price text-color">{{PC.price}}</h2>
+                <h3 class="old-price">Old price:
+                    <span class="text-color">{{PC.oldPrice}}</span></h3>
+                <h2 class="price text-color">Origin: {{PC.origin}}</h2>
+                <span class="main-cover__decor">Free nationwide shipping.</span>
+                <a href="" class="add-to-cart">Add to card</a>
+            </div>
+            <div class="main-cover-extra">
+                <p class="extra-item">{{PC.description}}</p>
+            </div>
+        </div>
+    </div>
+</main>
