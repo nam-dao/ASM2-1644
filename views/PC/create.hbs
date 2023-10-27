@@ -13,13 +13,19 @@
         </div>
         <div class="create-container">
             <h1 class="create">
-                Create Product
+                Create product
             </h1>
             <form action="/PC/create" class="form" method="post">
                 <label for="" class="form__label-name">Name</label>
                 <input type="text" class="form__input-name" name="name" />
                 <label for="" class="form__label-type">Origin</label>
-                <input type="text" class="form__input-name" name="origin" />
+                {{! <input type="text" class="form__input-name" name="origin" /> }}
+                <select name="origin" class="form__input-name">
+                    <option value="thailand">ThaiLand</option>
+                    <option value="vietnam">VietNam</option>
+                    <option value="china">China</option>
+                    <option value="usa">USA</option>
+                </select>
                 <label for="" class="form__label-type">Price</label>
                 <input type="text" class="form__input-name" name="price" />
                 <label for="" class="form__label-type">Old Price</label>
@@ -35,6 +41,12 @@
                     name="description"
                     required
                 ></textarea>
+                <label
+                    type="text"
+                    class="form__label-type"
+                    name="date"
+                >Date</label>
+                <input type="date" class="form__input-name" name="date" />
                 <div class="form-cta">
                     <a href="/Admin" class="form-cta__cancel">Cancel</a>
                     <input

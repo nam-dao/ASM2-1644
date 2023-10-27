@@ -12,8 +12,8 @@
         </div>
         <div class="container">
             <div class="add">
-                <a href="/Phone/create" class="add__item">Add Phone</a>
-                <a href="/PC/create" class="add__item">Add Laptop</a>
+                <a href="/Phone/create" class="add__item">Add Tech Toy</a>
+                <a href="/PC/create" class="add__item">Add Teddy Bear</a>
                 <a href="/Admin/createAd" class="add__item">Add Account</a>
             </div>
             <h1 class="product-table">Product Table</h1>
@@ -26,6 +26,7 @@
                         <th class="th">Price</th>
                         <th class="th">Old Price</th>
                         <th class="th">Description</th>
+                        <th class="th">Date</th>
                         <th class="th"></th>
                     </tr>
                 </thead>
@@ -42,11 +43,16 @@
                             <td class="td">{{price}}</td>
                             <td class="td">{{oldPrice}}</td>
                             <td class="td">{{description}}</td>
+                            <td class="td">{{dateFormat date "DD/MM/YYYY"}}</td>
                             <td class="td">
-                                <a href="/PC/update/{{_id}}">Update</a>
+                                <a
+                                    href="/PC/update/{{_id}}"
+                                    style="display: inline-block; border: 1px solid #000; background:#fff; padding: 5px; text-decoration: none"
+                                >Update</a>
                                 <a
                                     href="/PC/delete/{{_id}}"
                                     onclick="return confirm('Are you sure to delete this student ?');"
+                                    style="display: inline-block; border: 1px solid #000; background:#fff; padding: 5px; text-decoration: none"
                                 >Delete</a>
                             </td>
                         </tr>
@@ -64,10 +70,14 @@
                             <td class="td">{{oldPrice}}</td>
                             <td class="td">{{description}}</td>
                             <td class="td">
-                                <a href="/Phone/update/{{_id}}">Update</a>
+                                <a
+                                    href="/Phone/update/{{_id}}"
+                                    style="display: inline-block; border: 1px solid #000; background:#fff; padding: 5px; text-decoration: none"
+                                >Update</a>
                                 <a
                                     href="/Phone/delete/{{_id}}"
                                     onclick="return confirm('Are you sure to delete this ?');"
+                                    style="display: inline-block; border: 1px solid #000; background:#fff; padding: 5px; text-decoration: none"
                                 >Delete</a>
                             </td>
                         </tr>

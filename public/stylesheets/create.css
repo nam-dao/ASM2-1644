@@ -147,3 +147,11 @@ input[type=text]:focus {
 .form-cta__create:hover {
     opacity: 0.8;
 }
+
+.form__input-name {
+    margin-top: 2px;
+    width: 740px;
+    height: 40px;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+}

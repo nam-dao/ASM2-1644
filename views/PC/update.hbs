@@ -24,12 +24,12 @@
                     value="{{PC.name}}"
                 />
                 <label for="" class="form__label-type">Origin</label>
-                <input
-                    type="text"
-                    class="form__input-name"
-                    name="origin"
-                    value="{{PC.origin}}"
-                />
+                <select name="origin" class="form__input-name">
+                    <option value="thailand">ThaiLand</option>
+                    <option value="vietnam">VietNam</option>
+                    <option value="china">China</option>
+                    <option value="usa">USA</option>
+                </select>
                 <label for="" class="form__label-type">Price</label>
                 <input
                     type="text"
@@ -51,6 +51,12 @@
                     name="image"
                     value="{{PC.image}}"
                 />
+                <label
+                    type="text"
+                    class="form__label-type"
+                    name="date"
+                >Date</label>
+                <input type="date" class="form__input-name" name="date" />
                 <label
                     for=""
                     class="form__label-description"

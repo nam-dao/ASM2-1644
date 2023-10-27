@@ -19,6 +19,9 @@ const PCSchema = mongoose.Schema({
     image: {
         type: String,
     },
+    date: {
+        type: Date,
+    },
 });
 
 const PC = mongoose.model("PC", PCSchema, "PC");

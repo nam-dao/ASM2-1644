@@ -21,6 +21,9 @@ mongoose
 
 var bodyParser = require("body-parser");
 
+var hbs = require("hbs");
+hbs.registerHelper("dateFormat", require("handlebars-dateformat"));
+
 app.use(bodyParser.urlencoded({ extended: false }));
 
 // view engine setup
